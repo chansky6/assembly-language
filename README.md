@@ -6,4 +6,4 @@
 
 ---
 
-推荐一个视频，讲得非常清晰明了，资料已上传~
+推荐一个视频，讲得非常清晰明了，[资料](https://github.com/chansky6/assembly-language/blob/master/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.zip)已上传~
