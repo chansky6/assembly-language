@@ -1,8 +1,8 @@
-; 大小写转换, BaSiC转为大写, iNfOrMaTion转为小写
+; 大小写转换, [bx+idata]同时转换
 assume cs:codesg, ds:datasg
 datasg segment
     db 'BaSiC'
-    db 'iNfOrMaTion'
+    db 'MinIx'
 datasg ends
 
 codesg segment
@@ -15,16 +15,12 @@ start:
 s:  mov al, [bx]
     and al, 11011111b
     mov [bx], al
+
+    mov al, [bx+5]  ; 注意这里的[bx+5]
+    or al, 00100000b
+    mov [bx+5], al
     inc bx
     loop s
-
-    mov bx, 5
-    mov cx, 11
-s0: mov al, [bx]
-    or al, 00100000b
-    mov [bx], al
-    inc bx
-    loop s0
 
     mov ax, 4c00H
     int 21H

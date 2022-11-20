@@ -1,3 +1,4 @@
+; 实验4(1)(2)
 assume cs:code
 code segment
 

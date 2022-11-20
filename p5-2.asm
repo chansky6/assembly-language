@@ -1,3 +1,4 @@
+; 演示使用 loop
 assume cs:code
 code segment
         mov ax,0ffffH
